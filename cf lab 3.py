@@ -16,19 +16,27 @@ def multiply(x,y):
 def divide(x,y):
     print(x/y)
 
-x = int(input("Enter first number: "))
-y = int(input("Enter second number: "))
+while(True):
+    print("type to: (a)dd (s)ubtract (m)ultiply (d)ivide (q)uit ")
 
-print("hello")
+    action=input("")
 
-print("Type to:
-    (a)dd
-    (s)ubtract
-    (m)ultiply
-    (d)ivide
-    (q)uit")
+    if action == "q":
+        print("calc you later!")
+        break
 
-add(x,y)
-subtract(x,y)
-multiply(x,y)
-divide(x,y)
+    x = int(input("Enter first number: "))
+    y = int(input("Enter second number: "))
+
+    if action == "a":
+        add(x,y)
+
+    if action == "s":
+        subtract(x,y)
+
+    if action == "m":
+        multiply(x,y)
+
+    if action == "d":
+        divide(x,y)
+
