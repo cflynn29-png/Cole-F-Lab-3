@@ -1,4 +1,3 @@
-print("")
 
 #addition function
 def add(x,y):
@@ -19,6 +18,15 @@ def divide(x,y):
 
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))
+
+print("hello")
+
+print("Type to:
+    (a)dd
+    (s)ubtract
+    (m)ultiply
+    (d)ivide
+    (q)uit")
 
 add(x,y)
 subtract(x,y)
